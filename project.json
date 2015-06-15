@@ -1,0 +1,10 @@
+{
+    "name": "batCHAL",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "batCHAL.xml",
+    "author": "samtheching6a",
+    "minimum_firmware_version": 42
+}
