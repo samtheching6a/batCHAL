@@ -80,7 +80,7 @@
                             </value>
                             <next>
                               <block type="controls_if" id="537" inline="false">
-                                <mutation elseif="1" else="1"></mutation>
+                                <mutation elseif="2" else="1"></mutation>
                                 <value name="IF0">
                                   <block type="logic_compare" id="631" inline="true">
                                     <field name="OP">LT</field>
@@ -97,7 +97,30 @@
                                   </block>
                                 </value>
                                 <statement name="DO0">
-                                  <block type="movement_left" id="726"></block>
+                                  <block type="movement_left" id="726">
+                                    <next>
+                                      <block type="robot_delay" id="990" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="997">
+                                            <field name="NUM">400</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_forward" id="1008">
+                                            <next>
+                                              <block type="robot_delay" id="1019" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="1026">
+                                                    <field name="NUM">200</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
                                 </statement>
                                 <value name="IF1">
                                   <block type="logic_compare" id="749" inline="true">
